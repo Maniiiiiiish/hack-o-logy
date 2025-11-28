@@ -1,0 +1,42 @@
+/* Theme: Purple + Blue gradient, modern cards */
+body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+body.theme-bg { min-height: 100vh; background: radial-gradient(1200px circle at 10% 10%, rgba(131,56,236,0.18), transparent 35%), radial-gradient(800px circle at 90% 30%, rgba(78,115,223,0.18), transparent 40%), linear-gradient(180deg, #0e0f13, #151823); color: #e7e7ea; }
+.navbar { border-bottom: 1px solid rgba(255,255,255,0.08); }
+.navbar-dark.bg-primary, .navbar-dark.bg-dark { background: linear-gradient(90deg, #1b1f2a, #2b2f3a) !important; }
+.navbar-brand { font-weight: 600; letter-spacing: 0.2px; }
+.gradient-card { background: linear-gradient(135deg, rgba(78,115,223,0.08), rgba(131,56,236,0.08)); border: 1px solid rgba(78,115,223,0.15); }
+.card { border-radius: 12px; background: rgba(255,255,255,0.06); backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.08); color: #e7e7ea; }
+.card-hover { transition: transform 160ms ease, box-shadow 160ms ease; }
+.card-hover:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(78,115,223,0.2); }
+.btn-primary { background: linear-gradient(90deg, #4e73df, #8338ec); border: none; }
+.btn-primary:hover { opacity: 0.92; }
+.btn-outline-primary { color: #cfd3ff; border-color: rgba(131,56,236,0.5); }
+.btn-outline-primary:hover { background: linear-gradient(90deg, #4e73df, #8338ec); color: #fff; border-color: transparent; }
+.table { color: #e7e7ea; }
+.table-striped tbody tr:nth-of-type(odd) { background-color: rgba(255,255,255,0.04); }
+.cover-thumb { width: 64px; height: 90px; object-fit: cover; border-radius: 6px; border: 1px solid rgba(255,255,255,0.2); }
+.cover-placeholder { width: 64px; height: 90px; border-radius: 6px; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #8338ec, #4e73df); color:#fff; font-weight:600; }
+.badge { border-radius: 999px; }
+.assistant-fab { position: fixed; bottom: 24px; right: 24px; padding: 12px 18px; border-radius: 999px; z-index: 1040; }
+.assistant-panel { position: fixed; bottom: 90px; right: 24px; width: 360px; max-width: 90vw; transform: translateY(20px); opacity: 0; pointer-events: none; transition: all 160ms ease; z-index: 1030; }
+.assistant-panel.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+.assistant-msg { padding: 8px 10px; border-radius: 8px; margin: 6px 0; }
+.assistant-msg.user { background: rgba(131,56,236,0.2); }
+.assistant-msg.ai { background: rgba(78,115,223,0.2); }
+.assistant-suggestion { display:block; margin-top:6px; font-size: 0.9rem; }
+.assistant-inline { min-height: 240px; }
+.assistant-hero { text-align:center; margin-bottom: 18px; }
+.assistant-hero h2 { font-weight: 700; letter-spacing: 0.2px; }
+.assistant-bar { background: #2a2f3a; border-radius: 18px; padding: 16px; box-shadow: 0 6px 18px rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.08); }
+.assistant-bar .input-row { display:flex; align-items:center; gap:12px; }
+.assistant-bar input { flex:1; background: transparent; color:#e7e7ea; border: none; outline: none; font-size: 1.05rem; }
+.assistant-chips { display:flex; gap:10px; margin-top: 10px; }
+.chip { display:inline-flex; align-items:center; gap:8px; padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.08); color:#cfd3ff; cursor:pointer; }
+.chip:hover { background: rgba(131,56,236,0.18); color:#fff; }
+.voice-pill { padding:8px 12px; border-radius: 999px; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1); color:#cfd3ff; }
+.voice-pill.active { background: linear-gradient(90deg, #4e73df, #8338ec); color:#fff; }
+.suggest-grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); gap:12px; margin-top: 12px; }
+.suggest-card { border-radius: 12px; padding: 10px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); }
+.suggest-card .title { font-weight:600; }
+.suggest-card .meta { font-size:0.9rem; opacity:0.85; }
+.suggest-card .actions { margin-top:8px; }
